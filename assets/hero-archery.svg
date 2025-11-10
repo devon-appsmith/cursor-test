@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8db88f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6a9a6c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="400" fill="url(#skyGrad)"/>
+
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="url(#groundGrad)"/>
+
+  <!-- Target in background -->
+  <g transform="translate(650, 250)">
+    <circle cx="0" cy="0" r="50" fill="#f4f1e8" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="0" r="40" fill="#333"/>
+    <circle cx="0" cy="0" r="30" fill="#4a7c59"/>
+    <circle cx="0" cy="0" r="20" fill="#c94e3c"/>
+    <circle cx="0" cy="0" r="10" fill="#f4d03f"/>
+    <!-- Arrow in bullseye -->
+    <line x1="-60" y1="-5" x2="0" y2="0" stroke="#6b4423" stroke-width="3"/>
+    <polygon points="0,0 -8,-3 -8,3" fill="#888"/>
+  </g>
+
+  <!-- Archer figure -->
+  <g transform="translate(250, 320)">
+    <!-- Legs -->
+    <rect x="-8" y="80" width="10" height="60" fill="#2d5a3d" rx="3"/>
+    <rect x="10" y="80" width="10" height="60" fill="#2d5a3d" rx="3"/>
+
+    <!-- Body -->
+    <rect x="-15" y="30" width="40" height="60" fill="#4a7c59" rx="5"/>
+
+    <!-- Head -->
+    <circle cx="5" cy="15" r="15" fill="#d4a574"/>
+
+    <!-- Left arm (bow holding) -->
+    <rect x="-40" y="35" width="30" height="8" fill="#d4a574" rx="4"/>
+
+    <!-- Bow -->
+    <path d="M -45 20 Q -60 40 -45 60" stroke="#6b4423" stroke-width="4" fill="none"/>
+    <line x1="-45" y1="20" x2="-45" y2="60" stroke="#888" stroke-width="1.5"/>
+
+    <!-- Right arm (drawing) -->
+    <rect x="15" y="40" width="35" height="8" fill="#d4a574" rx="4" transform="rotate(-10 15 44)"/>
+
+    <!-- Arrow -->
+    <line x1="-40" y1="40" x2="80" y2="35" stroke="#c94e3c" stroke-width="3"/>
+    <polygon points="80,35 72,32 72,38" fill="#888"/>
+    <path d="M -40 37 L -47 40 L -40 43" stroke="#f4d03f" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Decorative trees -->
+  <g opacity="0.6">
+    <rect x="50" y="350" width="20" height="80" fill="#6b4423"/>
+    <polygon points="60,300 30,360 90,360" fill="#2d5a3d"/>
+    <polygon points="60,320 40,360 80,360" fill="#4a7c59"/>
+  </g>
+
+  <g opacity="0.6">
+    <rect x="720" y="360" width="15" height="60" fill="#6b4423"/>
+    <polygon points="727,320 707,370 747,370" fill="#2d5a3d"/>
+    <polygon points="727,335 712,370 742,370" fill="#4a7c59"/>
+  </g>
+</svg>
